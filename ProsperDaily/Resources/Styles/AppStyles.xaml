@@ -121,7 +121,7 @@
         <Setter Property="Margin" Value="0,0,0,-35" />
         <Setter Property="VerticalOptions" Value="End" />
         <Setter Property="HorizontalOptions" Value="End" />
-        <Setter Property="BackgroundColor" Value="{StaticResource MainColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource Yellow100Accent}" />
         <Setter Property="Clip" Value="{StaticResource circle}" />
     </Style>
 
