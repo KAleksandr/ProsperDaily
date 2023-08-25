@@ -59,7 +59,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="22.2.10" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="MVVM\Views\DashboardPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\StatisticPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\TransactionsPage.xaml">
