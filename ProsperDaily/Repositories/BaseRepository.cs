@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProsperDailyTests.Repositories
+namespace ProsperDaily.Repositories
 {
     public class BaseRepository<T> :
          IBaseRepository<T> where T : TableData, new()

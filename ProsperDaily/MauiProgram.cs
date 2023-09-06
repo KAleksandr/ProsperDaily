@@ -1,4 +1,6 @@
-﻿using Syncfusion.Maui.Core.Hosting;
+﻿using ProsperDaily.MVVM.Models;
+using ProsperDaily.Repositories;
+using Syncfusion.Maui.Core.Hosting;
 
 namespace ProsperDaily;
 
@@ -17,7 +19,7 @@ public static class MauiProgram
 				fonts.AddFont("LibreFranklin-Regular.ttf", "Regular");
 				fonts.AddFont("Roboto-Black.ttf", "Strong");
 			});
-
+		builder.Services.AddSingleton<BaseRepository<Transaction>>();
 		return builder.Build();
 	}
 }
