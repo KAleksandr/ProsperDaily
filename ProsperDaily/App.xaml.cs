@@ -12,8 +12,8 @@ public partial class App : Application
 		
 		InitializeComponent();
         TransactionRepo = _transactionsRepo;
-        //MainPage = new DashboardPage();
+        MainPage = new DashboardPage();
         //MainPage = new StatisticPage();
-        MainPage = new TransactionsPage();
+        //MainPage = new TransactionsPage();
 	}
 }

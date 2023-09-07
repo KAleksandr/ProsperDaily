@@ -9,7 +9,7 @@ namespace ProsperDaily.MVVM.ViewModels
 {
     public class TransactionViewModel
     {
-        Transaction Transaction { get; set; } = new Transaction();
+        Transaction Transaction { get; set; } = new Transaction() { OperationDate = DateTime.Now, Amount = 50, Name = "Coca-Cola"};
 
         public string SaveTransaction()
         {
