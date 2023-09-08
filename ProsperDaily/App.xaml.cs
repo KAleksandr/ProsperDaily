@@ -6,14 +6,17 @@ namespace ProsperDaily;
 
 public partial class App : Application
 {
-	public static BaseRepository<Transaction> TransactionRepo { get; private set; }
-	public App(BaseRepository<Transaction> _transactionsRepo)
-	{
-		
-		InitializeComponent();
-        TransactionRepo = _transactionsRepo;
-        MainPage = new DashboardPage();
+    public static BaseRepository<Transaction>
+     TransactionsRepo
+    { get; private set; }
+
+    public App(BaseRepository<Transaction> _transcationsRepo)
+    {
+
+        InitializeComponent();
+        TransactionsRepo = _transcationsRepo;
+        //MainPage = new DashboardPage();
         //MainPage = new StatisticPage();
-        //MainPage = new TransactionsPage();
+        MainPage = new NavigationPage(new DashboardPage()); 
 	}
 }
