@@ -14,9 +14,8 @@ public partial class App : Application
     {
 
         InitializeComponent();
-        TransactionsRepo = _transcationsRepo;
-        //MainPage = new DashboardPage();
-        MainPage = new StatisticPage();
-       // MainPage = new NavigationPage(new DashboardPage()); 
+        TransactionsRepo = _transcationsRepo;       
+        MainPage = new AppContainer();
+       
 	}
 }

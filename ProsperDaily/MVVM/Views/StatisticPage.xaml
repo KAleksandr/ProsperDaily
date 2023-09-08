@@ -4,6 +4,8 @@
              x:Class="ProsperDaily.MVVM.Views.StatisticPage"
              xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
              Title="StatisticPage">
+    
+    
     <Grid RowDefinitions=".15*, .15*, .30*, .40*">
         <RoundRectangle Grid.RowSpan="2" StyleClass="TopRectangle"/>
         <VerticalStackLayout StyleClass="Header">
@@ -20,7 +22,7 @@
                 <chart:SfCartesianChart.YAxes>
                     <chart:NumericalAxis/>
                 </chart:SfCartesianChart.YAxes>
-                <chart:SplineSeries ItemsSource="{Binding Summary}" XBindingPath="ShownDate" YBindingPath="TransactionTotal"/>
+                <chart:SplineSeries ItemsSource="{Binding Summary}" XBindingPath="ShownDate" YBindingPath="TransactionsTotal"/>
                 
             </chart:SfCartesianChart>
         </Grid>
